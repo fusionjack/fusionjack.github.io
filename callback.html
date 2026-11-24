@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Back to Arus</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px">
+<p>Signed in. Returning to Arus…</p>
+<p><a id="open" href="#" style="display:inline-block;padding:14px 24px;border-radius:24px;background:#3B5BA9;color:#fff;text-decoration:none">Open Arus</a></p>
+<script>
+  var target = 'io.github.fusionjack.arus://callback' + location.search;
+  document.getElementById('open').href = target;
+  location.replace(target);
+</script>
+</body>
+</html>
